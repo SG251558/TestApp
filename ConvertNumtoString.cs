@@ -38,9 +38,9 @@ class Utils
     public static string NumberToString(long number)
     {
         string str = number.ToString();
-        if (str.IndexOf('.'))
+        if (str.IndexOf('.') > 0)
         {
-            return 'please enter whole number';
+            return "please enter whole number";
         }
         string returnStr = "";
 
